@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #form-container
+        {
+            border: solid;
+            border-color: grey;
+            background-color: #dbd69c ;
+           width: 400px;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+         
+        
+        }
+        input{
+            display: block;
+            margin: 5px;
+            align-items: center;
+            width: 90%;
+            padding: 10px;
+        }
+        #contact
+        {
+            text-align: center;
+            padding: 15px;
+            margin: 5px;
+            width: 90%;
+            background-color: #cd5151 ; 
+            font-family:'Times New Roman', Times, serif;
+            color: white;
+          
+        }
+        #send
+        {
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            padding: 10px;
+            background-color: yellow;
+        }
+        #message
+        {
+            justify-content: baseline;
+            align-items: baseline;
+            padding-bottom: 50px;
+        }
+    </style>
+     <div id="form-container">
+        <div id="contact">
+            Contact Us!
+        </div>
+        <input type="text" name="name" id="" placeholder="Name....">
+        <input type="text" name="email" id=""placeholder="Email.....">
+        <input type="text" name="subject" id=""placeholder="subject....">
+        <input type="text" name="message" id="message"placeholder="message....">
+        <input id ="send"type="button" value="send message">
+     </div>
+</body>
+</html>
