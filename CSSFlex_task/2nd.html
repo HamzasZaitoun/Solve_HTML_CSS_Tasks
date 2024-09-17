@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+       .container
+       {
+        display: flex;
+       }
+       .item1 , .item2
+       {
+           height: 50px;
+           box-shadow: 10px 10px 10px 10px lightgray;
+       }
+       .item2
+       {
+        display: flex;
+        justify-content: flex-end;
+       }
+       .redCircle
+       {
+        width: 20px;
+        border-radius: 100%;
+        background-color: red;
+       }
+
+    </style>
+    <h1>Navbars</h1>
+  <div class="container">
+    <div class="item1"><div class="redCircle"></div></div>
+    <div class="item2">
+        <div class="content1">
+            Contact
+        </div>
+        <div class="content2">
+            Work
+        </div>
+        <div class="content3">
+            Portfolio
+        </div>
+    </div>
+</div>
+</body>
+</html>
