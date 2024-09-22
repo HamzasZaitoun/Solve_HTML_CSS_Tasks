@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container
+        {
+        }
+        .headerItem1
+        {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+           
+        }
+        .header
+        {
+            display: flex;
+            flex-direction: column;
+            background-color: #003B95;
+            color: white;
+        }
+        .headOptions ,.flightOptions
+        {
+            list-style: none;
+            
+        }
+        .flightOptions
+        {
+            padding: 15px;
+        }
+        li
+        {
+            padding: 15px;
+            display: inline-block;
+        }
+        .quote1
+        {
+            padding: 25px;
+            font-size: 3.25rem;
+            padding-bottom: 5px;
+        }
+        .quote2
+        {
+            padding: 20px;
+            padding-top: 0px;
+        }
+        .search-nav
+        {
+            
+            display: flex;
+            background-color:#FFB700 ;
+            width: 90%;
+            height: 8vh;
+            margin-top: -12px;
+            margin-left: 50px;
+
+
+        }
+        .search_item, .search-btn
+        {
+            padding: 10px;
+            width: 100%;
+          
+        }
+        input
+        {
+            width: 100%;
+            height: 100%;
+            padding: 9px;
+        }
+        .main
+        {
+           margin-top: 80px;
+           padding: 50px;
+            
+        }
+        .promo
+        {
+            font-size: 1.75rem;
+        }
+        .deals
+        {
+            padding: 5px;
+        }
+      .offers
+      {
+        display: flex;
+        justify-content: center;
+        
+      }
+      .offer1
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: aliceblue;
+        width: 48%;
+        height: 150px;
+        background-image: url(offer1.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin: 10px;
+      }
+      
+      .offer1-item1,.offer1-item2
+      {
+        padding-left: 15px;
+      }
+      .offer1-item3
+      {
+        width: 70%;
+        align-self: center;
+      }
+      .offer2
+      {
+        display: flex;
+        width: 48%;
+        border: 1px solid;
+        border-radius: 10px;
+        margin: 10px;
+      }
+     
+      .offer2-left
+      {
+       
+        padding-left: 10px;
+      }
+      .offer2-right
+      {
+        margin: auto;
+        text-align: center;
+      }
+      .offer2-right-pic
+      {
+        width: 50%;
+      }
+      .offer2-left-item2
+      {
+        font-size: small;
+        padding: 5px;
+      }
+      .blue-dot-container
+      {
+       
+        display: flex;
+        height: 10px;
+        text-align: center;
+        justify-content: center;
+      }
+      .bluedot
+      {
+        background-color: #003B95;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        padding: 7px;
+      }
+      .browse
+      {
+        padding: 5px;
+        font-size: 1.5em;
+        font-weight: 900; 
+      }
+      .explore
+      {
+        display: flex;
+        flex-wrap: nowrap;
+     
+      }
+      .explore-item-img 
+      {
+        display: inline-block;
+        margin: 20px;
+      }
+      .explore-section
+      {
+        padding: 20px;
+      }
+      .card-container
+      {
+        display: flex;
+        padding: 20px;
+      }
+      .card-img
+      {
+      width: 100%;
+        padding: 10px;
+        border-radius: 10%;
+      }
+      .card
+      {
+        padding: 10px;
+       margin: 10px;
+        border: .5px solid black;
+        border-radius: 5%;
+    
+      }
+      .card-details
+      {
+        padding: 10px;
+      }
+    
+      .properties
+      {
+        padding: 5px;
+      }
+      .section-header
+      {
+        padding: 20px;
+      }
+      .inspire-container
+      {
+        display: flex;
+        justify-content: space-around;
+      }
+      .big-card
+      {
+        width: 50%;
+        background-image: url(inspire.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: aliceblue;
+      }
+      .register-block
+      {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+      }
+      .register-buttons
+      {
+        display: inline-block;
+        width: 10%;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="header">
+        <div class="headerItem headerItem1">
+            <div class="headontent1">
+                <h1 class="url">Booking.com</h1>
+            </div>
+            <div class="headContent2"><ul class="headOptions">
+                <li>JOD</li>
+                <li>UK flag</li>
+                <li>QMARK</li>
+                <li>List your property</li>
+                <li><input type="button" value="Register"></li>
+                <li><input type="button" value="Sign in"></li>
+            </ul></div>
+        </div>
+        <div class="headerItem headerItem2"><ul class="flightOptions">
+            <li>Stays</li>
+            <li>Flights</li>
+            <li>Car rentals</li>
+            <li>Attractions</li>
+            <li>Airport taxis</li>
+        </ul>
+        </div>
+        <div class="headerItem headerItem2">
+            <div class="quotes">
+                <h1 class="quote1">
+                    Find your next stay
+                </h1>
+                <h2 class="quote2">
+                    Search low prices on hotels, homes and much more...
+                </h2>
+            </div>
+        </div>
+       </div>
+       <div class="search-nav">
+        <div class="search_item"><input type="text" name="" id=""placeholder="Where are you going?"></div>
+        <div class="search_item"><input type="text" name="" id=""placeholder="check-in d... -check-out d..."></div>
+        <div class="search_item"><input type="text" name="" id=""placeholder="2 adults 0 children 1 room"></div>
+        <div class="search-btn">
+            <input type="button" value="Search">
+        </div>
+       </div>
+       <div class="main">
+        <div class="promo">
+            offers
+        </div>
+        <div class="deals">
+            promotion, deals and special offers for you
+        </div>
+           <div class="offers">
+            <div class="offer1">
+                <div class="offer1-item1"><h3>Seize the moment</h3></div>
+                <div class="offer1-item2"><p>save 15% when you book and stay before 1 october <br> 2024</p></div>
+                <div class="offer1-item3"><input type="button" value="Find Gateway Deals"></div>
+            </div>
+            <div class="offer2">
+                <div class="offer2-left">
+                    <div class="offer2-left-item1"><h3>Go for good time, not a long time</h3></div>
+                    <div class="offer2-left-item2">finish your year with a mini break. save 15% or more when you book and stay by 7 January 2025</div>
+                    <div class="offer2-left-item3"><input type="button" value="find late escape deals"></div>
+                </div>
+                <div class="offer2-right">
+                    <img src="offer2.jpeg" alt="" class="offer2-right-pic">
+                </div>
+            </div>
+           </div>
+           <div class="blue-dot-container">
+             <div class="bluedot"></div>
+           </div>
+           <div class="browse">
+            Browse by property type
+           </div>
+         </div>
+         <div class="explore">
+            <div class="explore-item">
+                <div class="explore-item-img">
+                    <img src="hotels.jpeg" alt="">
+                    <legend>Hotels</legend>
+                </div>
+                <div class="explore-item-img">
+                    <img src="apartments.jpeg" alt="">
+                    <legend>Apartments</legend>
+                </div>
+                <div class="explore-item-img">
+                    <img src="resorts.jpeg" alt="">
+                    <legend>Resorts</legend>
+                </div>
+                <div class="explore-item-img">
+                    <img src="villas.jpeg" alt="">
+                    <legend>Villas</legend>
+                </div>
+            </div>
+         </div>
+         <section class="explore-section">
+            <h1 class="section-header">
+                explore Jordan
+            </h1>
+            <p class="section-paragraph">
+                These populer destinations have a lot to offer
+            </p>
+           <div class="card-container">
+            <div class="explore-card card">
+                <div>
+                    <img src="Aqaba.jpg" alt="" class="card-img">
+                </div>
+                <div class="card-details">
+                   <div class="card-legend">
+                    Aqaba
+                   </div>
+                   <div class="properties">
+                    173 properties
+                   </div>
+                </div>
+            </div>
+            <div class="explore-card card">
+                <div>
+                    <img src="deadsea.jpg" alt="" class="card-img">
+                </div>
+                <div class="card-details">
+                   <div class="card-legend">
+                    Dead sea Jordan
+                   </div>
+                   <div class="properties">
+                    30 properties
+                   </div>
+                </div>
+            </div>
+            <div class="explore-card card">
+                <div>
+                    <img src="amman.jpg" alt="" class="card-img">
+                </div>
+                <div class="card-details">
+                   <div class="card-legend">
+                    Amman
+                   </div>
+                   <div class="properties">
+                    616 properties
+                   </div>
+                </div>
+            </div>
+            <div class="explore-card card">
+                <div>
+                    <img src="wadirum.jpg" alt="" class="card-img">
+                </div>
+                <div class="card-details">
+                   <div class="card-legend">
+                    Wadi Rum
+                   </div>
+                   <div class="properties">
+                    327 properties
+                   </div>
+                </div>
+            </div>
+            <div class="explore-card card">
+                <div>
+                    <img src="petra.jpg" alt="" class="card-img">
+                </div>
+                <div class="card-details">
+                   <div class="card-legend">
+                    Petra
+                   </div>
+                   <div class="properties">
+                    200 properties
+                   </div>
+                </div>
+            </div>
+            <div class="explore-card card">
+                <div>
+                    <img src="ajloun.jpg" alt="" class="card-img">
+                </div>
+                <div class="card-details">
+                   <div class="card-legend">
+                    Ajloun
+                   </div>
+                   <div class="properties">
+                    14 properties
+                   </div>
+                </div>
+            </div>
+            </div>
+         </section>
+         <section class="tripPlanner">
+            <div class="section-header">
+                <h1 class="section-h1">Quick and easy trip planner</h1>
+                <p class="section-p">
+                    pick a vibe and explore the top destinations
+                </p>
+            </div>
+          <div class="planner-menu">
+            <ul class="planner-list">
+                <li class="planner-list-item">
+                    Romance
+                </li>
+                <li class="planner-list-item">
+                    Beach
+                </li>
+                <li class="planner-list-item">
+                    Outdoors
+                </li>
+                <li class="planner-list-item">
+                    City
+                </li>
+            </ul>
+          </div>
+          <div class="card-container">
+            <div class="explore-card card planner-card">
+                <div>
+                    <img src="jerash.jpg" alt="" class="card-img">
+                </div>
+                <div class="card-details">
+                   <div class="card-legend">
+                    Jerash
+                   </div>
+                   <div class="properties">
+                    37 km away
+                   </div>
+                </div>
+            </div>
+            <div class="explore-card card planner-card">
+                <div>
+                    <img src="irbid.jpg" alt="" class="card-img">
+                </div>
+                <div class="card-details">
+                   <div class="card-legend">
+                    Irbid
+                   </div>
+                   <div class="properties">
+                    68 km away
+                   </div>
+                </div>
+            </div>
+            <div class="explore-card card 
+            planner-card">
+                <div>
+                    <img src="dana.jpg" alt="" class="card-img">
+                </div>
+                <div class="card-details">
+                   <div class="card-legend">
+                  Dana
+                   </div>
+                   <div class="properties">
+                   145 Km away
+                   </div>
+                </div>
+            </div>
+            </div>
+            
+         </section>
+         <section class="weekend-deals">
+            <div class="section-header">
+                <h1 class="section-h1">
+                    Deals for the weekend
+                </h1>
+                <p class="section-p">Save on stays for 20 September - 22 september</p>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="suncitycamp.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <div class="card-legend">
+                            Sun City Camp
+                        </div>
+                        <div class="properti">
+                            Wadi Rum, Jordan
+                        </div>es
+                        <div class="rate">
+                            <mark>8.9</mark> fabulous . 435 reviews
+                        </div>
+                        <div class="deal-price">
+                            2 nights <span class="oldprice">JOD 230</span><p class="newprice">JOD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="suncitycamp.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <div class="card-legend">
+                            Sun City Camp
+                        </div>
+                        <div class="properti">
+                            Wadi Rum, Jordan
+                        </div>es
+                        <div class="rate">
+                            <mark>8.9</mark> fabulous . 435 reviews
+                        </div>
+                        <div class="deal-price">
+                            2 nights <span class="oldprice">JOD 230</span><p class="newprice">JOD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="suncitycamp.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <div class="card-legend">
+                            Sun City Camp
+                        </div>
+                        <div class="properti">
+                            Wadi Rum, Jordan
+                        </div>es
+                        <div class="rate">
+                            <mark>8.9</mark> fabulous . 435 reviews
+                        </div>
+                        <div class="deal-price">
+                            2 nights <span class="oldprice">JOD 230</span><p class="newprice">JOD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="suncitycamp.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <div class="card-legend">
+                            Sun City Camp
+                        </div>
+                        <div class="properti">
+                            Wadi Rum, Jordan
+                        </div>es
+                        <div class="rate">
+                            <mark>8.9</mark> fabulous . 435 reviews
+                        </div>
+                        <div class="deal-price">
+                            2 nights <span class="oldprice">JOD 230</span><p class="newprice">JOD</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+         </section>
+         <section class="ispire">
+            <div class="section-header">
+                <h1 class="section-h1">
+                    Get inspiration for your next trip
+                </h1>
+            </div>
+                <div class="inspire-container">
+                    <div class="card big-card">
+                        <div class="big-card-content">
+                            <h2>New Year's Eve in New York City</h2>
+                            <p> Ring in the new year with iconic moments and unforgettable memories in new york city</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="suncitycamp.jpg" alt="" class="card-img">
+                        <div class="card-details">
+                            <div class="card-legend">
+                                Sun City Camp
+                            </div>
+                            <div class="properti">
+                                Wadi Rum, Jordan
+                            </div>es
+                            <div class="rate">
+                                <mark>8.9</mark> fabulous . 435 reviews
+                            </div>
+                            <div class="deal-price">
+                                2 nights <span class="oldprice">JOD 230</span><p class="newprice">JOD</p>
+                            </div>
+                        </div>
+                    </div> <div class="card">
+                        <img src="suncitycamp.jpg" alt="" class="card-img">
+                        <div class="card-details">
+                            <div class="card-legend">
+                                Sun City Camp
+                            </div>
+                            <div class="properti">
+                                Wadi Rum, Jordan
+                            </div>es
+                            <div class="rate">
+                                <mark>8.9</mark> fabulous . 435 reviews
+                            </div>
+                            <div class="deal-price">
+                                2 nights <span class="oldprice">JOD 230</span><p class="newprice">JOD</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            
+         </section>
+         <section class="top-rated-section">
+            <div class="section-header">
+                <h1 class="section-h">
+                    Stay in a top-rated holiday rental 
+                </h1>
+            </div>
+            <div class="card-container top-rate-container">
+                <div class="card top-rate-card">
+                    <img src="suncitycamp.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <div class="card-legend">
+                            Sun City Camp
+                        </div>
+                        <div class="properti">
+                            Wadi Rum, Jordan
+                        </div>es
+                        <div class="rate">
+                            <mark>8.9</mark> fabulous . 435 reviews
+                        </div>
+                        <div class="deal-price">
+                            2 nights <span class="oldprice">JOD 230</span><p class="newprice">JOD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="suncitycamp.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <div class="card-legend">
+                            Sun City Camp
+                        </div>
+                        <div class="properti">
+                            Wadi Rum, Jordan
+                        </div>es
+                        <div class="rate">
+                            <mark>8.9</mark> fabulous . 435 reviews
+                        </div>
+                        <div class="deal-price">
+                            2 nights <span class="oldprice">JOD 230</span><p class="newprice">JOD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="suncitycamp.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <div class="card-legend">
+                            Sun City Camp
+                        </div>
+                        <div class="properti">
+                            Wadi Rum, Jordan
+                        </div>es
+                        <div class="rate">
+                            <mark>8.9</mark> fabulous . 435 reviews
+                        </div>
+                        <div class="deal-price">
+                            2 nights <span class="oldprice">JOD 230</span><p class="newprice">JOD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="suncitycamp.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <div class="card-legend">
+                            Sun City Camp
+                        </div>
+                        <div class="properti">
+                            Wadi Rum, Jordan
+                        </div>es
+                        <div class="rate">
+                            <mark>8.9</mark> fabulous . 435 reviews
+                        </div>
+                        <div class="deal-price">
+                            2 nights <span class="oldprice">JOD 230</span><p class="newprice">JOD</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </section>
+         <section class="unique-section">
+            <div class="section-header">
+                <h1 class="section-h">
+                    Stay at our top unique properties
+                </h1>
+                <p class="section-p">
+                    From castles and villas to boats and iglos, we've got it all
+                </p>
+            </div>
+            <div class="card-container top-rate-container">
+                <div class="card top-rate-card">
+                    <img src="suncitycamp.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <div class="card-legend">
+                            Sun City Camp
+                        </div>
+                        <div class="properti">
+                            Wadi Rum, Jordan
+                        </div>es
+                        <div class="rate">
+                            <mark>8.9</mark> fabulous . 435 reviews
+                        </div>
+                        <div class="deal-price">
+                            2 nights <span class="oldprice">JOD 230</span><p class="newprice">JOD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="suncitycamp.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <div class="card-legend">
+                            Sun City Camp
+                        </div>
+                        <div class="properti">
+                            Wadi Rum, Jordan
+                        </div>es
+                        <div class="rate">
+                            <mark>8.9</mark> fabulous . 435 reviews
+                        </div>
+                        <div class="deal-price">
+                            2 nights <span class="oldprice">JOD 230</span><p class="newprice">JOD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="suncitycamp.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <div class="card-legend">
+                            Sun City Camp
+                        </div>
+                        <div class="properti">
+                            Wadi Rum, Jordan
+                        </div>es
+                        <div class="rate">
+                            <mark>8.9</mark> fabulous . 435 reviews
+                        </div>
+                        <div class="deal-price">
+                            2 nights <span class="oldprice">JOD 230</span><p class="newprice">JOD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="suncitycamp.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <div class="card-legend">
+                            Sun City Camp
+                        </div>
+                        <div class="properti">
+                            Wadi Rum, Jordan
+                        </div>es
+                        <div class="rate">
+                            <mark>8.9</mark> fabulous . 435 reviews
+                        </div>
+                        <div class="deal-price">
+                            2 nights <span class="oldprice">JOD 230</span><p class="newprice">JOD</p>
+                        </div>
+                    </div>
+                </div>
+
+         </section>
+         <section class="register">
+            <div class="section-header">
+                <h1 class="section-h">
+                    Travel more, spend less
+                </h1>
+
+            </div>
+            <div class="register-block">
+                <div class="left_side">
+                    <div class="item">
+                        Sign in, save money
+                    </div>
+                    <div class="item">
+                        <p>Save 10% or more at participating properties</p>
+                    </div>
+                    <div class="item">
+                        <input class="register-buttons" type="button" value="sign in">
+                        <input class="register-buttons"type="button" value="Register">
+                    </div>
+                </div>
+               <div class="right_side">
+                <img src="" alt="">
+               </div>
+            </div>
+         </section>
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

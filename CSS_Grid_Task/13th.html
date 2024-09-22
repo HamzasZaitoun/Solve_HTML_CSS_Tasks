@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resturant Menu</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-rows: repeat(5, 300px); 
+            grid-template-columns: 1fr; 
+            gap: 10px; 
+            width: 60%; 
+        }
+        .grid-item {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            display: flex;
+            font-size: 20px;
+        }
+        .header
+        {
+            flex-direction: row;
+            padding: 10px;
+            float: left;
+            width: 50%;
+        }
+        .icon
+        {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item" style="display: flex;">
+            <div class="header">
+                <img src="Setting_Sun.webp" alt="logo" style="width: 50px; height: 50px; ">
+                <h4>Delicious</h4>
+
+            </div>
+            <div class="icon"></div>
+        </div>
+        <div class="grid-item">Row 2</div>
+        <div class="grid-item">Row 3</div>
+        <div class="grid-item">Row 4</div>
+        <div class="grid-item">Row 5</div>
+    </div>
+</body>
+</html>
